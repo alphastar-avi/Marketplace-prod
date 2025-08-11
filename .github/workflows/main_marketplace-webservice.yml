@@ -62,4 +62,5 @@ jobs:
           app-name: 'marketplace-webservice'
           slot-name: 'Production'
           package: .
+          startupCommand: 'npm run start'
           
