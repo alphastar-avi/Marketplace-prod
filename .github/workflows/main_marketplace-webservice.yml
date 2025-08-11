@@ -62,5 +62,5 @@ jobs:
           app-name: 'marketplace-webservice'
           slot-name: 'Production'
           package: .
-          startupCommand: 'export PATH=$PATH:./node_modules/.bin && npm run start'
+          startupCommand: 'cd /home/site/wwwroot && echo "Current working directory: $(pwd)" && echo "Contents of node_modules/.bin:" && ls -l node_modules/.bin && echo "PATH: $PATH" && export PATH=$PATH:./node_modules/.bin && echo "New PATH: $PATH" && npm run start'
           
